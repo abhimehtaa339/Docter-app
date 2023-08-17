@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".Dashbord_screen">
+
+    <ImageView
+        android:id="@+id/doc_img"
+        android:layout_width="48dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/back_button_background"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_male_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/hello"
+        android:textColor="#44444d"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/doc_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/doc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/namee"
+        android:textColor="#181a21"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/doc_img"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="31dp"
+        android:src="@drawable/notification_svgrepo_com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toEndOf="@+id/doc_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/forward_button_background"
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:elevation="5dp"
+        android:hint="@string/search"
+        android:padding="15dp"
+        android:textColor="#464650"
+        android:textCursorDrawable="@drawable/custom_cursor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doc_name" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#7d8fff"
+        android:orientation="horizontal"
+        app:cardCornerRadius="23dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbar"
+        app:layout_constraintVertical_bias="0.112">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stay Safe"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stay Healthy!"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/an_apple_a_day"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keeps_the"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/docter_away"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="165dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/doctor" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.12"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:progress="100"
+            app:indicatorColor="#ff9a00"
+            app:trackCornerRadius="3dp" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:progress="100"
+            app:indicatorColor="#46464e"
+            app:trackCornerRadius="3dp" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:progress="100"
+            app:indicatorColor="#46464e"
+            app:trackCornerRadius="3dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/at_your_fingretip"
+        android:textColor="#1f1f1f"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/scan"
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#ff8c4a"
+                android:drawableTop="@drawable/baseline_qr_code_scanner_24"
+                android:padding="8dp"
+                android:text="@string/scan"
+                android:textColor="#80fafafa"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/vaccine"
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#fafafa"
+                android:drawableTop="@drawable/baseline_vaccines_24"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:text="@string/vaccine"
+                android:textColor="#383c4d"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mybooking"
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_marginStart= "8dp"
+                android:backgroundTint="#fafafa"
+                android:drawableTop="@drawable/baseline_vaccines_24"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:text="@string/my_bookings"
+                android:textColor="#383c4d"
+                app:cornerRadius="12dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clinic"
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#fafafa"
+                android:drawableTop="@drawable/baseline_local_hospital_24"
+                android:padding="8dp"
+                android:text="@string/clinic"
+                android:textColor="#373c4d"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/ambulance"
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#fafafa"
+                android:drawableTop="@drawable/ambulance_car_urgency_svgrepo_com"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:text="@string/ambulance"
+                android:textColor="#383c4d"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nurse"
+                android:layout_width="110dp"
+                android:layout_height="95dp"
+                android:layout_marginStart= "8dp"
+                android:backgroundTint="#fafafa"
+                android:drawableTop="@drawable/nurse_bust_svgrepo_com"
+                android:elevation="5dp"
+                android:padding="8dp"
+                android:text="@string/nurse"
+                android:textColor="#383c4d"
+                app:cornerRadius="12dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

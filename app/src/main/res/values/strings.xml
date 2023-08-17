@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Docters App</string>
+    <string name="year">Year</string>
+    <string name="months">Months</string>
+    <string name="practicing_from">Practicing From</string>
+    <string name="others">Others</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="email_id">Email ID</string>
+    <string name="name">Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="_4">/4</string>
+    <string name="_2">2</string>
+    <string name="nulls">NULLS</string>
+    <string name="docter_id">Docter id :</string>
+    <string name="practiceyear">practiceYear :</string>
+    <string name="practicemonth">practiceMonth :</string>
+    <string name="GENDER">Gender :</string>
+    <string name="emailid">Email :</string>
+    <string name="namee">NAME : </string>
+    <string name="please_check_your_information">Please check your Information</string>
+    <string name="lets_move_forward">Lets move forward</string>
+    <string name="hello">Hello,</string>
+    <string name="search">Search...</string>
+    <string name="an_apple_a_day">An apple a day</string>
+    <string name="keeps_the">keeps the</string>
+    <string name="docter_away">docter away</string>
+    <string name="at_your_fingretip">At your Fingretip</string>
+    <string name="scan">scan</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="clinic">Clinic</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="nurse">Nurse</string>
+    <string name="my_bookings">My Bookings</string>
+</resources>
